@@ -1,0 +1,3 @@
+read_verilog counter_test.v
+proc; opt
+write_json counter_test.json
