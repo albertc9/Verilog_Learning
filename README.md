@@ -10,10 +10,10 @@ iverilog -o simv testbench.v dut.v
 - `testbench.v` is test bench;
 - `dut.v` is DUT
 
-And then it output `sim` file:
+And then it output `simv` file:
 
 ```bash
-vvp sim
+vvp simv
 ```
 
 terminal will output the result.
@@ -26,7 +26,7 @@ initial begin
     $dumpvars(0, testbench); // `testbench` is the top module name
 ```
 
-after running `vvp sim`, you'll find the wave. You can open it by
+after running `vvp simv`, you'll find the wave. You can open it by
 
 ```bash
 gtkwave waveform.vcd
